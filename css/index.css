@@ -1,0 +1,345 @@
+@charset "utf-8";
+@import url('reset.css');
+@import url('font.css');
+
+
+/* 헤더 */
+header {
+    width: 100%;
+    font-family: 'Pretendard', 'Noto Sans KR';
+    color: #111;
+    position: relative;
+    /* .visual .inner iframe */
+}
+
+header .inner {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .inner img {
+    width: 150px;
+    object-fit: cover;
+}
+
+header .inner .menu {
+    display: flex;
+    gap: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fff;
+}
+
+header .inner .menu li {
+    position: static;
+}
+
+header .inner .menu li .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    color: #111;
+    display: none;
+    padding: 50px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+header .inner .menu li .submenu .submenu-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .inner .menu li .submenu .submenu-inner .col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+header .inner .menu li .submenu .submenu-inner .col h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+header .inner .menu li .submenu .submenu-inner .col a {
+    font-size: 14px;
+    color: #111;
+}
+
+header .inner .menu li .submenu .submenu-inner .col img {
+    width: 110px;
+    object-fit: cover;
+}
+
+header .inner .menu li:hover .submenu,
+header .inner .menu li .submenu:hover {
+    display: block;
+}
+
+header .inner .menu li::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+
+header .inner .user {
+    display: flex;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fff;
+}
+
+header .inner .user .icon {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .inner .user img {
+    width: 20px;
+    object-fit: cover;
+}
+
+
+
+
+/* 메인비주얼 */
+.visual {
+    width: 100%;
+}
+
+.visual .inner {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.visual .inner .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 500px 0 180px 0;
+    text-align: center;
+    align-items: center;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.visual .inner .text h1 {
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 600;
+    text-shadow: 0 1px 0 #111;
+}
+
+.visual .inner .text h2 {
+    font-family: 'Pretendard', 'Noto Sans KR';
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0 1px 0 #111;
+    margin-bottom: 40px;
+}
+
+.visual .inner .text h3 {
+    display: inline-block;
+    width: fit-content;
+    border: 2px solid #fff;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 30px;
+}
+
+.visual .inner .text h3:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+.visual .inner video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+}
+
+
+
+
+
+/* 메인 */
+.main {
+    width: 100%;
+    background-color: #fafafa;
+    color: #111;
+    font-family: 'Pretendard', 'Noto Sans KR';
+}
+
+.main .inner {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 200px 0 200px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.main .inner .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.main .inner .text h1 {
+    font-family: 'Inter';
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.main .inner .text p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main .inner .list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .inner .swiper.mySwiper {
+    width: 100%;
+}
+
+.main .inner .swiper.mySwiper .swiper-wrapper .swiper-slide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .inner .swiper.mySwiper .swiper-wrapper .swiper-slide .item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.main .inner .swiper.mySwiper .swiper-wrapper .swiper-slide .item img {
+    width: 330px;
+    object-fit: cover;
+    padding: 60px 20px;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+}
+
+.main .inner .swiper.mySwiper .swiper-wrapper .swiper-slide .item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main .inner .swiper.mySwiper .swiper-wrapper .swiper-slide .item ul li:first-child {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.main .inner .swiper.mySwiper .swiper-wrapper .swiper-slide .item ul li:first-child:hover {
+    color: #d42020;
+}
+
+.main .inner .line {
+    content: '';
+    border: 1px solid #ebebeb;
+    margin: 100px 0;
+}
+
+/* 푸터 */
+footer {
+    width: 100%;
+    font-family: 'Pretendard', 'Noto Sans KR';
+    background-color: #152751;
+    color: #fff;
+}
+
+footer .inner {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+footer .inner .menu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 200px;
+    row-gap: 80px;
+    font-family: 'Pretendard', 'Noto Sans KR';
+    line-height: 1.5;
+    margin-bottom: 100px;
+}
+
+footer .inner .menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer .inner .menu li h1 {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer .inner .menu li .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer .inner .menu li button {
+    padding: 10px 30px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+footer .inner .menu li .text a:hover {
+    text-decoration: underline;
+}
+
+footer .inner .logo {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+footer .inner .logo img {
+    width: 150px;
+    object-fit: cover;
+}
+
+footer .inner .logo p {
+    font-size: 14px;
+    font-weight: 300;
+}
