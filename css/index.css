@@ -285,47 +285,68 @@ footer {
 footer .inner {
     max-width: 1520px;
     margin: 0 auto;
-    padding: 100px 0;
-}
-
-footer .inner .menu {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 200px;
-    row-gap: 80px;
-    font-family: 'Pretendard', 'Noto Sans KR';
-    line-height: 1.5;
-    margin-bottom: 100px;
-}
-
-footer .inner .menu li {
+    padding: 50px 0;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 70px;
 }
 
-footer .inner .menu li h1 {
+footer .inner .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .inner .top .left {
+    display: flex;
+    gap: 150px;
+    line-height: 1.5;
+}
+
+footer .inner .top .left li {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .inner .top li h1 {
     font-family: 'Inter';
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 }
 
-footer .inner .menu li .text {
+footer .inner .top li .text {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
 }
 
-footer .inner .menu li button {
-    padding: 10px 30px;
-    background-color: #fff;
-    font-size: 14px;
+footer .inner .top .left li .text a:hover {
+    text-decoration: underline;
 }
 
-footer .inner .menu li .text a:hover {
-    text-decoration: underline;
+footer .inner .top .right {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+footer .inner .top .right li {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .inner .top .right li button {
+    padding: 10px 30px;
+    background-color: #fff;
+    font-size: 12px;
+}
+
+footer .inner .top .right li img {
+    width: 28px;
+    object-fit: cover;
 }
 
 footer .inner .logo {
