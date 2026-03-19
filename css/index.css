@@ -225,6 +225,7 @@ header .inner .user img {
     justify-content: space-between;
 }
 
+/* 스와이퍼 */
 .main .inner .swiper.mySwiper {
     width: 100%;
 }
@@ -268,11 +269,86 @@ header .inner .user img {
     color: #d42020;
 }
 
+/* 구분선 */
 .main .inner .line {
     content: '';
     border: 1px solid #ebebeb;
     margin: 100px 0;
 }
+
+.main .inner .issue {
+    width: 100%;
+}
+
+.main .inner .issue .list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .inner .issue .list .item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main .inner .issue .list .item .banner {
+    position: relative; /* .main .inner .issue .list .item .banner .title */
+    display: inline-block;
+}
+
+.main .inner .issue .list .item .banner .image {
+    position: relative; /* .main .inner .issue .list .item .banner .image::after */
+    width: 500px;
+    display: block;
+}
+.main .inner .issue .list .item .banner .image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.main .inner .issue .list .item .banner .image::after {
+    content: "";
+    position: absolute; /* .main .inner .issue .list .item .banner .image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    z-index: 0;
+}
+
+.main .inner .issue .list .item .banner .title {
+    position: absolute; /* .main .inner .issue .list .item .banner */
+    bottom: 10%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'Pretendard', 'Noto Sans KR';
+    line-height: 1.5;
+    color: #fff;
+    z-index: 99;
+}
+
+.main .inner .issue .list .item .banner .title h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.main .inner .issue .list .item .banner .title h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.main .inner .issue .list .item .ul {}
+
+.main .inner .issue .list .item .ul li {}
+
+.main .inner .issue .list .item .ul li img {}
+
+.main .inner .issue .list .item .ul li .tag {}
+
+
 
 /* 푸터 */
 footer {
