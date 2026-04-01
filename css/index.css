@@ -269,6 +269,26 @@ header .inner .user img {
     color: #d42020;
 }
 
+.main .inner .swiper.mySwiper .swiper-wrapper .swiper-slide .item ul .sale {
+    display: flex;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.main .inner .swiper.mySwiper .swiper-wrapper .swiper-slide .item ul .sale h4 {
+    color: #d42020;
+    font-size: 14px;
+}
+
+.main .inner .swiper.mySwiper .swiper-wrapper .swiper-slide .item ul .sale h5 {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #777;
+}
+
 /* 구분선 */
 .main .inner .line {
     content: '';
@@ -276,6 +296,7 @@ header .inner .user img {
     margin: 100px 0;
 }
 
+/* 소식 */
 .main .inner .issue {
     width: 100%;
 }
@@ -283,6 +304,7 @@ header .inner .user img {
 .main .inner .issue .list {
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
 .main .inner .issue .list .item {
@@ -410,6 +432,7 @@ header .inner .user img {
     font-size: 13px;
     line-height: 1.5;
 }
+
 .main .inner .issue .list .item a:hover {
     text-decoration: underline;
 }
