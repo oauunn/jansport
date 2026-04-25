@@ -39,7 +39,7 @@ header {
 }
 
 header .inner {
-    ma-width: 1720px;
+    max-width: 1720px;
     margin: 0 auto;
     padding-top: 20px;
     display: flex;
@@ -211,7 +211,7 @@ header .inner .user img {
 
 
 
-/* 메인 */
+/* 메인 - 베스트셀러 */
 .main {
     width: 100%;
     background-color: #fafafa;
@@ -263,6 +263,7 @@ header .inner .user img {
 }
 
 .main .inner .swiper.mySwiper .swiper-wrapper .swiper-slide .item {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -294,6 +295,17 @@ header .inner .user img {
 
 .main .inner .swiper.mySwiper .swiper-wrapper .swiper-slide .item ul li:first-child:hover {
     color: #d42020;
+}
+
+.main .inner .swiper.mySwiper .swiper-wrapper .swiper-slide .item strong {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    z-index: 8888;
 }
 
 .main .inner .swiper.mySwiper .swiper-wrapper .swiper-slide .item ul .sale {
